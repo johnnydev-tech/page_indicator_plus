@@ -12,17 +12,23 @@ class _PageIndicatorState extends State<PageIndicator> {
   BasePainter _createPainer() {
     switch (widget.layout) {
       case PageIndicatorLayout.NONE:
-        return NonePainter(widget, widget.controller.page ?? 0.0, index, _paint);
+        return NonePainter(
+            widget, widget.controller.page ?? 0.0, index, _paint);
       case PageIndicatorLayout.SLIDE:
-        return SlidePainter(widget, widget.controller.page ?? 0.0, index, _paint);
+        return SlidePainter(
+            widget, widget.controller.page ?? 0.0, index, _paint);
       case PageIndicatorLayout.WARM:
-        return WarmPainter(widget, widget.controller.page ?? 0.0, index, _paint);
+        return WarmPainter(
+            widget, widget.controller.page ?? 0.0, index, _paint);
       case PageIndicatorLayout.COLOR:
-        return ColorPainter(widget, widget.controller.page ?? 0.0, index, _paint);
+        return ColorPainter(
+            widget, widget.controller.page ?? 0.0, index, _paint);
       case PageIndicatorLayout.SCALE:
-        return ScalePainter(widget, widget.controller.page ?? 0.0, index, _paint);
+        return ScalePainter(
+            widget, widget.controller.page ?? 0.0, index, _paint);
       case PageIndicatorLayout.DROP:
-        return DropPainter(widget, widget.controller.page ?? 0.0, index, _paint);
+        return DropPainter(
+            widget, widget.controller.page ?? 0.0, index, _paint);
       default:
         throw Exception("Not a valid layout");
     }
@@ -38,7 +44,8 @@ class _PageIndicatorState extends State<PageIndicator> {
       ),
     );
 
-    if (widget.layout == PageIndicatorLayout.SCALE || widget.layout == PageIndicatorLayout.COLOR) {
+    if (widget.layout == PageIndicatorLayout.SCALE ||
+        widget.layout == PageIndicatorLayout.COLOR) {
       child = ClipRect(
         child: child,
       );
