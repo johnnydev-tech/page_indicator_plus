@@ -1,6 +1,6 @@
 name: page_indicator_plus
 description: A Flutter package that provides a simple and customizable page indicator.
-version: 1.0.2
+version: 1.0.4
 homepage: https://github.com/Johnnyfdev/page_indicator_plus
 
 environment:
@@ -14,7 +14,7 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.1
 
 
 flutter:

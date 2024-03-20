@@ -1,23 +1,10 @@
-# page_indicator_plus
+# Page Indicator Plus
+
+The Page Indicator Plus library was developed as an alternative to the deprecated package [flutter_page_indicator](https://pub.dev/documentation/flutter_page_indicator/latest/). It provides an easy way to add animated page indicators in projects that use PageController, making development with PageViews and similar components easier.
 
 
-A biblioteca Page Indicator Plus foi desenvolvida como uma alternativa ao pacote descontinuado [flutter_page_ndicator](https://pub.dev/documentation/flutter_page_indicator/latest/). 
-Ela fornece uma maneira fácil de adicionar indicadores de página animados em projetos que usam o PageController, facilitando o desenvolvimento com PageViews e similares.
-
-## Instalação
-Para instalar a biblioteca, adicione a seguinte dependência em seu arquivo *pubspec.yaml*:
-
-```
-dependencies:
-  page_indicator_plus: 
-```
-
-Em seguida, execute o seguinte comando em seu terminal para instalar a biblioteca:
-
-```flutter pub get```
-
-## Como usar
-Para utilizar a biblioteca Page Indicator Plus, você precisará de um PageController e do número total de páginas que você tem.
+## How to Use:
+To use the Page Indicator Plus library, you will need a PageController and the total number of pages you have.
 
 ```
 
@@ -27,7 +14,7 @@ final PageController _pageController = PageController(
 );
 ```
 
-Em seguida, adicione o widget PageIndicator ao seu widget de exibição de página (por exemplo, um PageView) e configure os parâmetros de acordo com suas necessidades.
+Next, add the PageIndicator widget to your page display widget (e.g., a PageView) and configure the parameters according to your needs.
 
 ```
 PageIndicator(
@@ -42,20 +29,19 @@ PageIndicator(
 )
 ```
 
+The configuration parameters are:
 
-Os parâmetros de configuração são:
+- `controller` (required): The page controller you are using for the page display widget;
+- `count` (required): the total number of pages.
+- `size` (optional, default: 5.0): the size of the page indicators.
+- `layout` (optional, default: `PageIndicatorLayout.SLIDE`): the layout of the - page indicators (can be `PageIndicatorLayout.NONE`,  `PageIndicatorLayout.DROP`,  `PageIndicatorLayout.SLIDE `,   `PageIndicatorLayout.COLOR `,  `PageIndicatorLayout.SCALE`, or  `PageIndicatorLayout.WARM `).
+- `color` (optional, default: `Colors.grey`): the color of inactive page indicators.
+- `activeColor` (optional, `default: Colors.blue`): the color of the active - page indicator.
+-   `scale` (optional, default: 0.6): the scale of the page indicators.
+-   `space` (optional, default: 5.0): the space between page indicators.
+-   `dropHeight` (optional, default: 20.0): the height of the page indicator when layout is `PageIndicatorLayout.DROP`.
 
-- `controller` (obrigatório): o controlador de página que você está usando para o widget de exibição de página;
-- `count` (obrigatório): o número total de páginas;
-- `size` (opcional, padrão: 5.0): o tamanho dos indicadores de página;
-- `layout` (opcional, padrão: `PageIndicatorLayout.SLIDE`): o layout dos indicadores de página (pode ser `PageIndicatorLayout.NONE`,  `PageIndicatorLayout.DROP`, `PageIndicatorLayout.SLIDE`,  `PageIndicatorLayout.COLOR`, `PageIndicatorLayout.SCALE`, ou `PageIndicatorLayout.WARM`);
-- `color` (opcional, padrão: Colors.grey): a cor dos indicadores de página inativos;
-- `activeColor` (opcional, padrão: Colors.blue): a cor do indicador de página ativo;
-- `scale` (opcional, padrão: 0.6): a escala dos indicadores de página;
-- `space` (opcional, padrão: 5.0): o espaço entre os indicadores de página;
-- `dropHeight` (opcional, padrão: 20.0): a altura do indicador de página quando layout for `PageIndicatorLayout.DROP`;
-
-## Todos layouts
+## All layouts
 
 | Layout  | Showcase   | 
 | :------------ |:---------------:|
@@ -66,5 +52,5 @@ Os parâmetros de configuração são:
 | PageIndicatorLayout.SCALE | ![](./assets/images/indicator5.gif)  
 | PageIndicatorLayout.DROP | ![](./assets/images/indicator7.gif)  
 
-## Contribuindo
-Se você encontrar algum problema ou tiver alguma sugestão de melhoria, não hesite em abrir uma issue ou enviar uma pull request para o repositório do GitHub da biblioteca: https://github.com/johnnyCrmall/page_indicator_plus.
+## Contributing
+If you encounter any issues or have suggestions for improvements, please do not hesitate to open an issue or submit a pull request to the GitHub repository of the library https://github.com/johnnyfdev/page_indicator_plus.
