@@ -74,6 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 scale: 0.65,
                 space: 10,
               ),
+              const SizedBox(height: 16.0),
             ],
           ),
         ),
